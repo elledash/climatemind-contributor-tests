@@ -16,25 +16,6 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-<<<<<<< HEAD
-=======
-## Specific to RubyMotion:
-.dat*
-.repl_history
-build/
-*.bridgesupport
-build-iPhoneOS/
-build-iPhoneSimulator/
-
-## Specific to RubyMotion (use of CocoaPods):
-#
-# We recommend against adding the Pods directory to your .gitignore. However
-# you should judge for yourself, the pros and cons are mentioned at:
-# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
-#
-# vendor/Pods/
-
->>>>>>> ee2f4920285f90998f01a33c195540daea574a6d
 ## Documentation cache and generated files:
 /.yardoc/
 /_yardoc/
@@ -56,8 +37,4 @@ build-iPhoneSimulator/
 .rvmrc
 
 # Used by RuboCop. Remote config files pulled in from inherit_from directive.
-<<<<<<< HEAD
 # .rubocop-https?--*
-=======
-# .rubocop-https?--*
->>>>>>> ee2f4920285f90998f01a33c195540daea574a6d
