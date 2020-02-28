@@ -15,7 +15,6 @@ feature "Home page" do
         expect(page).to have_current_path("https://scientistsspeakup.org/climate-mind/")
       end
 
-
       it "can see home page contents" do
         expect(page).to have_title "Climate Mind \u2013 Scientists Speak Up"
         expect(page).to have_content "Climate Mind"
