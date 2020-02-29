@@ -9,6 +9,15 @@ Metrics/ModuleLength:
   Exclude:
     - "spec/**/*_spec.rb"
 
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
 # Always use double quotes
 Style/StringLiterals:
   EnforcedStyle: double_quotes
