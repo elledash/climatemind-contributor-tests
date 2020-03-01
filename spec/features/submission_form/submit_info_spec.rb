@@ -6,21 +6,29 @@ feature "Climate change info contributor submission form" do
     visit "/"
   end
 
-  describe "user can access submission form" do
-    it "can view form content" do
+  describe "user can view form" do
+
+    it "view form content" do
       within "form[name='submit-to-google-sheet']" do
+
         expect(page).to have_content "Climate Change Effects and Solutions Submissions"
       end
     end    
   end
 
-  describe "user can submit form with climate change info" do
-
-    # TODO: Happy paths
-    context "successfully submit form" do
+  describe "user can submit form" do
     
-      xit "submit with all required information"
+    context "successfully submit form" do
 
+      it "with only the required information" do
+        fill_in "name", with: "Tester name"
+        fill_in "email", with: "random string"
+        click_on "Send"
+ 
+        expect(page).to have_content "Submission success."
+      end
+
+      # TODO: Happy path with optional info
       xit "submit with optional and required information"
 
     end
@@ -29,6 +37,7 @@ feature "Climate change info contributor submission form" do
     context "user can't submit form" do
 
       xit "submit an empty form"
+
             
       xit "submit form without required fields"
             
