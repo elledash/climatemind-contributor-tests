@@ -9,7 +9,7 @@ feature "Home page" do
 
     context "When user visits page" do
 
-      #TODO test is failing because page has two trailing slashes...
+      # TODO: test is failing because page has two trailing slashes...
       # https://scientistsspeakup.org/climate-mind//"
       xit "is on the correct page" do
         expect(page).to have_current_path("https://scientistsspeakup.org/climate-mind/")
