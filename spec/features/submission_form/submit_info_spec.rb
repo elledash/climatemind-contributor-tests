@@ -30,17 +30,18 @@ feature "Climate change info contributor submission form" do
 
       # TODO: Happy path with optional info
       xit "submit with optional and required information"
-
     end
 
     # TODO: Sad paths
     context "user can't submit form" do
 
-      xit "submit an empty form"
-
+      xit "submit an empty form" do
+        click_on "Send"
+        # TODO: find how to test for alert bubble        
+      end
             
       xit "submit form without required fields"
-            
-    end
-  end  
+      
+    end  
+  end
 end
