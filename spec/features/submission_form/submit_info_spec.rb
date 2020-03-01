@@ -1,15 +1,17 @@
 require "spec_helper"
 
-feature "Submission form" do
+feature "Climate change info contributor submission form" do
 
   before do
     visit "/"
   end
 
-  # TODO
-  describe "user can view form" do
-    xit "view climate change info submission form"
-    
+  describe "user can access submission form" do
+    it "can view form content" do
+      within "form[name='submit-to-google-sheet']" do
+        expect(page).to have_content "Climate Change Effects and Solutions Submissions"
+      end
+    end    
   end
 
   describe "user can submit form with climate change info" do
